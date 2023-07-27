@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/personaje-yu-gi-oh.png">
+    <title>Registro de Cartas Yu-Gi-Oh!</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1 class="main-title">Registro de Cartas Yu-Gi-Oh!</h1>
+
+      <div class="forms-container">
+        <form id="form" class="form-cards"><!-- Formulario principal ( creacion de cartas ) -->
+          <h2>Crea una Nueva carta</h2>
+          <div class="form-fields">
+            <label for="tipo">Elige el tipo de carta!</label>
+            <select name="tipo" id="tipo">
+              <option value="Monstruo">Monstruo</option>
+              <option value="Mágica">Mágica</option>
+              <option value="Trampa">Trampa</option>
+            </select>
+          </div>
+          
+          <div class="form-fields">
+            <label for="nombre">Nómbralo!</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Crea un nombre" required/>
+          </div>
+          
+          <div class="form-fields">
+            <label for="descripcion">Escribe una descripción adecuada!</label>
+            <textarea name="descripcion" id="descripcion" rows="4" placeholder="Describe a tu personaje" required></textarea>
+          </div>
+          
+          <div class="form-fields">
+            <label for="puntosBatalla">Asignale puntos de batalla!</label>
+            <input type="number" name="puntosBatalla" id="puntosBatalla" required placeholder="2000"/>
+            <input type="submit" class="submit-button" value="Registrar"/>
+          </div>
+        </form>
+      
+        <div id="edit-form-container" class="hidden form-popup"><!-- Formulario Secundario ( edición de cartas ) -->
+          <form id="edit-form" class="form-cards">
+            <h2>Editar Carta</h2>
+            <div class="form-fields">
+              <label for="type-card-edit">Cambia el tipo de carta!</label>
+              <select name="tipo" id="type-card-edit">
+                <option value="Monstruo" class="monster-card">Monstruo</option>
+                <option value="Mágica">Mágica</option>
+                <option value="Trampa">Trampa</option>
+              </select>
+            </div>
+            
+            <div class="form-fields">
+              <label for="card-name-edit">Cambiale el nombre!</label>
+              <input type="text" name="nombre" id="card-name-edit" placeholder="Cámbiale el nombre" required/>
+            </div>
+            
+            <div class="form-fields">
+              <label for="edit-descripcion">Escribe una nueva descripción!</label>
+              <textarea name="descripcion" id="edit-descripcion" rows="4" placeholder="Describe a tu personaje" required></textarea>
+            </div>
+
+            <div class="form-fields">
+              <label for="edit-puntosBatalla">Cámbiale los puntos de batalla!</label>
+              <input type="number" name="puntosBatalla" id="edit-puntosBatalla" required placeholder="2000"/>
+              <input type="hidden" name="edit-id" id="edit-id"/>
+              <div>
+                <input type="submit" class="mod-button" value="Guardar cambios"/>
+                <button id="delete-button" class="delete-button">Eliminar</button>
+              </div>
+            </div>
+            <button type="button" class="cancel">Cerrar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="search-form form-cards"><!-- Tercer Formulario ( Búsqueda de cartas ) -->
+        <form id="search-form">
+          <h2>Búsqueda de cartas</h2>
+          <input type="text" id="search-term" placeholder="Buscar por nombre o tipo" required/>
+          <input type="submit" class="submit-button" value="Buscar" />
+          <button id="mostrar-todas" class="cancel">Cancelar</button>
+        </form>
+      </div>
+
+      <div class="cards-container">
+        <h2>Cartas Creadas</h2>
+        <ul id="lista-cartas" class="registered-cards"></ul>
+      </div>
+    
+      <div class="paginador-container">
+        <ul id="card-pagination"></ul>
+      </div>
+    
+      <div class="image-container">
+        <img src="/images/personaje-yu-gi-oh.png" class="background-image">
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright (c) 2023 Adrian Zuñiga. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

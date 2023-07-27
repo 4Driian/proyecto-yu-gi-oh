@@ -1,0 +1,30 @@
+@import '../abstracts/variables.scss';
+
+.registered-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 0;
+}
+
+.registered-cards li {
+  background-image: url('../../images/template-card.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  color: #000;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0px 10px 0px;
+  max-height: 488px;
+  overflow: auto;
+  padding: 21px;
+  width: 310px;
+}
+
+.registered-cards li:hover {
+  cursor: pointer;
+  filter: $soft-shadow;
+  transition: all 0.2s ease;
+}

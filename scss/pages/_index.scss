@@ -1,0 +1,46 @@
+@import '../abstracts/variables.scss';
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: rgb(23 74 110);
+  color: $white;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 400;
+  filter: $soft-shadow;
+}
+
+.image-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image {
+  width: 600px;
+  height: auto;
+}
+
+.paginador-container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.paginador-container li {
+  list-style: none;
+  background: $white;
+  margin: 5px;
+  border-radius: 50%;
+  width: 24px;
+  padding: 8px;
+  color: $dark-purple-color;
+  cursor: pointer;
+}
+
+.paginador-container li:hover {
+  background: #bdbdbd;
+  transition: all 01s ease;
+}

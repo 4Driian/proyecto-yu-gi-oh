@@ -1,0 +1,16 @@
+@import '../abstracts/variables.scss';
+.delete-button, .cancel {
+  margin-top: 10px;
+  background-color: $red;
+  color: $white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover, .cancel:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: $dark-red;
+  color: $white;
+}

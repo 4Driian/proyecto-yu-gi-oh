@@ -1,0 +1,67 @@
+@import '../abstracts/variables.scss';
+
+.form-cards label{
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.form-cards input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.form-cards input:focus {
+  background-color: $white;
+}
+
+.form-cards textarea {
+  padding: 22px;
+  width: 350px;
+  height: 125px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-cards input[type="submit"].submit-button {
+  margin-top: 10px;
+  background-color: $yellow;
+}
+
+.form-cards input[type="submit"].submit-button:hover {
+  background-color: $dark-yellow;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.form-cards input[type="submit"].mod-button {
+  margin-top: 10px;
+  background-color: $green;
+  color: $white;
+}
+
+.form-cards input[type="submit"].mod-button:hover {
+  background-color: $dark-green;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.form-cards input[type="submit"].mod-button {
+  margin-top: 10px;
+  background-color: $green;
+  color: $white;
+}
+
+.form-cards input[type="submit"].mod-button:hover {
+  background-color: $dark-green;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: inherit;
+}

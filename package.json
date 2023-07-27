@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.4.1",
+    "node-fetch": "^3.3.2",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "yu-gi-oh",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4Driian/yu-gi-oh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4Driian/yu-gi-oh/issues"
+  },
+  "homepage": "https://github.com/4Driian/yu-gi-oh#readme"
+}

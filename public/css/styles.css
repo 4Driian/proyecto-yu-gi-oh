@@ -1,0 +1,254 @@
+/*Pages*/ /*Colors*/
+/*shadows*/
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: rgb(23, 74, 110);
+  color: #fff;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 400;
+  filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.4117647059));
+}
+
+.image-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image {
+  width: 600px;
+  height: auto;
+}
+
+.paginador-container ul {
+  display: flex;
+  justify-content: center;
+}
+
+.paginador-container li {
+  list-style: none;
+  background: #fff;
+  margin: 5px;
+  border-radius: 50%;
+  width: 24px;
+  padding: 8px;
+  color: #1E021E;
+  cursor: pointer;
+}
+
+.paginador-container li:hover {
+  background: #bdbdbd;
+  transition: all 1s ease;
+}
+
+/*Layouts*/
+/*Colors*/
+/*shadows*/
+.forms-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-cards {
+  background-color: #9D3A6C;
+  padding: 30px 30px 30px 30px;
+  border-radius: 15px;
+  margin-top: 15px;
+  filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.4117647059));
+}
+
+.form-fields {
+  display: flex;
+  border-radius: 10px;
+  background-color: #1E021E;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 40px 20px;
+  filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.4117647059));
+  margin-top: 15px;
+}
+
+.search-form {
+  margin-top: 15px;
+  background-color: rgba(11, 41, 63, 0.479);
+}
+
+.footer {
+  text-align: start;
+}
+
+/*Components*/
+/*Colors*/
+/*shadows*/
+.form-cards label {
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.form-cards input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 5px;
+}
+
+.form-cards input:focus {
+  background-color: #fff;
+}
+
+.form-cards textarea {
+  padding: 22px;
+  width: 350px;
+  height: 125px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.form-cards input[type=submit].submit-button {
+  margin-top: 10px;
+  background-color: #ffe785;
+}
+
+.form-cards input[type=submit].submit-button:hover {
+  background-color: #e0bf3b;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.form-cards input[type=submit].mod-button {
+  margin-top: 10px;
+  background-color: #04cf15;
+  color: #fff;
+}
+
+.form-cards input[type=submit].mod-button:hover {
+  background-color: #00990d;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.form-cards input[type=submit].mod-button {
+  margin-top: 10px;
+  background-color: #04cf15;
+  color: #fff;
+}
+
+.form-cards input[type=submit].mod-button:hover {
+  background-color: #00990d;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+select {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-size: inherit;
+}
+
+/*Colors*/
+/*shadows*/
+.registered-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  padding: 0;
+}
+
+.registered-cards li {
+  background-image: url("../../images/template-card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  color: #000;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0px 10px 0px;
+  max-height: 488px;
+  overflow: auto;
+  padding: 21px;
+  width: 310px;
+}
+
+.registered-cards li:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 4px 8px rgba(0, 0, 0, 0.4117647059));
+  transition: all 0.2s ease;
+}
+
+/*Colors*/
+/*shadows*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9D3A6C;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9D3A6C;
+}
+
+/*Colors*/
+/*shadows*/
+.delete-button, .cancel {
+  margin-top: 10px;
+  background-color: #ce0000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover, .cancel:hover {
+  transition: all 0.2s ease-in-out;
+  background-color: #8f0000;
+  color: #fff;
+}
+
+/*Colors*/
+/*shadows*/
+.form-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.473);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.form-popup form {
+  background-color: #9D3A6C;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.form-popup h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-popup.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
